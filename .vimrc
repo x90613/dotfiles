@@ -138,6 +138,3 @@ set ignorecase
 " Sublime is a great theme!
 colorscheme sublimemonokai
 
-" Overwrite colorcolumn color
-highlight ColorColumn ctermbg=cyan
-
