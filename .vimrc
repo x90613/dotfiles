@@ -143,9 +143,17 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-python/python-syntax'
+Plug 'tpope/vim-fugitive'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
+
+" vim-airline customizations
 let g:airline_theme='bubblegum'
+let g:airline#extensions#branch#enabled = 1
+
 " Sublime is a great theme!
 colorscheme sublimemonokai
+
+" Enable all py highlighting
 let g:python_highlight_all=1
+
