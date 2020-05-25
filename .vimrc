@@ -135,8 +135,6 @@ set undodir=~/.undo//
 
 set ignorecase
 
-
-
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
@@ -150,9 +148,14 @@ call plug#end()
 " vim-airline customizations
 let g:airline_theme='bubblegum'
 let g:airline#extensions#branch#enabled = 1
+let g:airline_powerline_fonts = 1
 
 " Sublime is a great theme!
 colorscheme sublimemonokai
+
+" Highlight the current line, match SublimeAqua
+set cursorline
+highlight CursorLineNR cterm=bold ctermfg=81
 
 " Enable all py highlighting
 let g:python_highlight_all=1
