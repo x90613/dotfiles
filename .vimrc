@@ -142,6 +142,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-python/python-syntax'
 Plug 'tpope/vim-fugitive'
+Plug 'edkolev/tmuxline.vim'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -149,6 +150,8 @@ call plug#end()
 let g:airline_theme='bubblegum'
 let g:airline#extensions#branch#enabled = 1
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tmuxline#enabled = 1
+let airline#extensions#tmuxline#snapshot_file = "~/.tmux-status.conf"
 
 " Sublime is a great theme!
 colorscheme sublimemonokai
