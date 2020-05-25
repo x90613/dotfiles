@@ -153,10 +153,18 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tmuxline#enabled = 1
 let airline#extensions#tmuxline#snapshot_file = "~/.tmux-status.conf"
 
+let g:tmuxline_preset = {
+      \'a'    : '#P',
+      \'b'    : '',
+      \'c'    : '#W',
+      \'x'    : ['%A','%m/%d/%y', '%I:%M %p'],
+      \'y'    : '',
+      \'z'    : '#H'}
+
 " Sublime is a great theme!
 colorscheme sublimemonokai
 
-" Highlight the current line, match SublimeAqua
+" Highlight the current line
 set cursorline
 highlight CursorLineNR cterm=bold ctermfg=81
 
