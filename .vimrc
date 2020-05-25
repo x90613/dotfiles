@@ -142,8 +142,10 @@ call plug#begin('~/.vim/plugged')
 " Declare the list of plugins.
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-python/python-syntax'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 let g:airline_theme='bubblegum'
 " Sublime is a great theme!
 colorscheme sublimemonokai
+let g:python_highlight_all=1

@@ -197,7 +197,7 @@ hi! link Exception    SublimePink
 call s:h('CommentURL',    { 'fg': s:grey, 'format': 'italic' })
 
 hi! link PreProc        SublimeGreen
-hi! link Include        SublimeWhite
+hi! link Include        SublimePink
 hi! link Define         SublimePink
 hi! link Macro          SublimeGreen
 hi! link PreCondit      SublimeWhite
