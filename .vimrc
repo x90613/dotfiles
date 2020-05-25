@@ -40,7 +40,7 @@ endif
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
   syntax on
-  colorscheme sublimemonokai
+  "colorscheme sublimemonokai
   set hlsearch
 endif
 
@@ -104,7 +104,7 @@ packadd matchit
 set number
 
 " Column @ char=80
-set colorcolumn=80
+" set colorcolumn=80
 
 " Buffer switching using Cmd-arrows in Mac annd Alt-arrows inn Linux
 :nnoremap <D-Right> :bnext<CR>
@@ -135,6 +135,15 @@ set undodir=~/.undo//
 
 set ignorecase
 
+
+
+call plug#begin('~/.vim/plugged')
+
+" Declare the list of plugins.
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+" List ends here. Plugins become visible to Vim after this call.
+call plug#end()
+let g:airline_theme='bubblegum'
 " Sublime is a great theme!
 colorscheme sublimemonokai
-
