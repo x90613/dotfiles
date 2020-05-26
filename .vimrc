@@ -60,7 +60,7 @@ if has("autocmd")
   au!
 
   " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=78
+  autocmd FileType text setlocal textwidth = 78
 
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
@@ -100,15 +100,13 @@ endif
 " compatible.
 packadd matchit
 
-" Jae's Vim Settings
-
 " Line Numbers
 set number
 
 " Column @ char=80
 " set colorcolumn=80
 
-" Buffer switching using Cmd-arrows in Mac annd Alt-arrows inn Linux
+" Buffer switching using Cmd-arrows in Mac and Alt-arrows in Linux
 :nnoremap <D-Right> :bnext<CR>
 :nnoremap <M-Right> :bnext<CR>
 :nnoremap <D-Left> :bprevious<CR>
@@ -138,7 +136,6 @@ set undodir=~/.undo//
 set ignorecase
 
 call plug#begin('~/.vim/plugged')
-" Declare the list of plugins.
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-python/python-syntax'
@@ -147,7 +144,7 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'roxma/vim-tmux-clipboard'
 Plug 'tpope/vim-commentary'
-" List ends here. Plugins become visible to Vim after this call.
+Plug 'al3623/rippl.vim'
 call plug#end()
 
 " vim-airline customizations
