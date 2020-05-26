@@ -146,6 +146,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'edkolev/tmuxline.vim'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'roxma/vim-tmux-clipboard'
+Plug 'tpope/vim-commentary'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
