@@ -63,22 +63,27 @@ else
 fi
 unset color_prompt force_color_prompt
 
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
-
+# enable color support of some programs
+case "$OSTYPE" in
+*linux*)
+        alias dmesg='dmesg --color'
+        alias pacman='pacman --color=auto'
+	alias ls='ls --color=auto'
+	;;
+*darwin*)
+	alias ls='ls -G'
+	;;
+esac
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
+# some more handy aliases
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 
 # enable programmable completion features 
 if ! shopt -oq posix; then

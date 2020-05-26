@@ -178,7 +178,7 @@ hi! link Comment      SublimeWarmGrey
 hi! link Constant     SublimePurple
 hi! link String       SublimeYellow
 hi! link Character    SublimeYellow
-hi! link Number       SublimePurple
+hi! link Number       SublimeGreen
 hi! link Boolean      SublimePurple
 hi! link Float        SublimePurple
 hi! link Identifier   SublimeWhite
@@ -214,7 +214,7 @@ hi! link Todo           Comment
 
 " Some highlighting groups custom to the Sublime Monokai theme
 
-call s:h('SublimeType',   { 'fg': s:green, 'format': 'italic' })
+call s:h('SublimeType',   { 'fg': s:purple, 'format': 'italic' })
 call s:h('SublimeContextParam',  { 'fg': s:orange, 'format': 'italic' })
 hi! link SublimeDocumentation SublimeGrey
 hi! link SublimeFunctionCall SublimeAqua
