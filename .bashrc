@@ -57,6 +57,7 @@ fi
 
 if [ "$color_prompt" = yes ]; then
         PS1="$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]\h'; else echo "\[\033[01;32m\]\u\[\033[00;36m\]@\h\[\033[00m\]:"; fi)\[\033[01;34m\]\w \$([[ \$? != 0 ]] && echo \"\[\033[01;31m\]>_<\[\033[01;34m\] \")\[\033[00;36m\]\$\[\033[00m\] "
+
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi

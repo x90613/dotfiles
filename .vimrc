@@ -105,6 +105,7 @@ set number
 
 " Column @ char=80
 " set colorcolumn=80
+" set textwidth=80
 
 " Buffer switching using Cmd-arrows in Mac and Alt-arrows in Linux
 :nnoremap <D-Right> :bnext<CR>
@@ -116,16 +117,41 @@ if has("gui_macvim")
 	 let macvim_skip_cmd_opt_movement = 1
 endif
 
-" Indentation
-set shiftwidth=4
-"set ts=4
-set expandtab
+" Indentation (adapted from others..)
 
+"""
+" C
+"""
+autocmd BufNewFile,BufReadPost *.c set filetype=c
+autocmd BufNewFile,BufReadPost *.h set filetype=c
+autocmd FileType c setlocal
+            \ tabstop=8
+            \ noexpandtab
+            \ shiftwidth=8
+            \ softtabstop=8
+
+
+""""""""""
+" Makefile
+""""""""""
 autocmd FileType make setlocal noexpandtab
 
-autocmd FileType text setlocal autoindent expandtab softtabstop=2 textwidth=76
+""""""""""
+" Markdown
+""""""""""
+autocmd Filetype markdown setlocal
+            \ tabstop=4
+            \ expandtab
+            \ shiftwidth=4
+            \ softtabstop=4
+            \ textwidth=80
 
-autocmd FileType help setlocal nospell
+""""""""""
+" Text
+""""""""""
+autocmd FileType text setlocal autoindent expandtab softtabstop=2 textwidth=80
+
+"autocmd FileType help setlocal nospell
 
 " So that we don't litter pwd
 set backupdir^=~/.backup
