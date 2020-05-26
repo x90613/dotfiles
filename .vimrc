@@ -34,6 +34,8 @@ inoremap <C-U> <C-G>u<C-U>
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
   set mouse=a
+  " Allow proper mouse use within tmux
+  set ttymouse=xterm2
 endif
 
 " Switch syntax highlighting on, when the terminal has colors
@@ -136,13 +138,14 @@ set undodir=~/.undo//
 set ignorecase
 
 call plug#begin('~/.vim/plugged')
-
 " Declare the list of plugins.
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-python/python-syntax'
 Plug 'tpope/vim-fugitive'
 Plug 'edkolev/tmuxline.vim'
+Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'roxma/vim-tmux-clipboard'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
