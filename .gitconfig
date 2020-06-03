@@ -1,3 +1,5 @@
 [user]
 	email = hjm2133@columbia.edu
 	name = Hans Montero
+[alias]
+	st = status
