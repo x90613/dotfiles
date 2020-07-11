@@ -104,7 +104,7 @@ packadd matchit
 set number
 
 " Column @ char=80
-" set colorcolumn=80
+ set colorcolumn=80
 " set textwidth=80
 
 " Buffer switching using Cmd-arrows in Mac and Alt-arrows in Linux
@@ -151,6 +151,16 @@ autocmd Filetype markdown setlocal
 """"""""""
 autocmd FileType text setlocal autoindent expandtab softtabstop=2 textwidth=80
 
+""""""""""
+" Python
+"""""""""""
+autocmd FileType python setlocal
+            \ tabstop=2
+            \ expandtab
+            \ shiftwidth=2
+            \ softtabstop=2
+
+
 "autocmd FileType help setlocal nospell
 
 " So that we don't litter pwd
@@ -170,6 +180,7 @@ Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'roxma/vim-tmux-clipboard'
 Plug 'tpope/vim-commentary'
 Plug 'al3623/rippl.vim'
+Plug 'Yggdroot/indentLine'
 call plug#end()
 
 " vim-airline customizations
@@ -196,4 +207,6 @@ highlight CursorLineNR cterm=bold ctermfg=81
 
 " Enable all py highlighting
 let g:python_highlight_all=1
+let g:indentLine_color_term=8
+let g:indentLine_char = '▏'
 
