@@ -79,5 +79,5 @@ endif
 syn keyword cDefined defined contained containedin=cDefine
 hi def link cDefined cDefine
 
-
-
+" Trailing Space
+syn match cSpaceError '\s\+$' display

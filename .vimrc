@@ -180,7 +180,6 @@ Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'roxma/vim-tmux-clipboard'
 Plug 'tpope/vim-commentary'
 Plug 'al3623/rippl.vim'
-Plug 'Yggdroot/indentLine'
 call plug#end()
 
 " vim-airline customizations
