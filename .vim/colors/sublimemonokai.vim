@@ -175,12 +175,12 @@ hi! link WarningMsg SublimeRed
 " Generic Syntax Highlighting (see reference: 'NAMING CONVENTIONS' at http://vimdoc.sourceforge.net/htmldoc/syntax.html#group-name)
 
 hi! link Comment      SublimeWarmGrey
-hi! link Constant     SublimePurple
+hi! link Constant     SublimeGreen
 hi! link String       SublimeYellow
 hi! link Character    SublimeYellow
 hi! link Number       SublimeGreen
-hi! link Boolean      SublimePurple
-hi! link Float        SublimePurple
+hi! link Boolean      SublimeGreen
+hi! link Float        SublimeGreen
 hi! link Identifier   SublimeWhite
 hi! link Function     SublimeAqua
 hi! link Type         SublimeAqua
@@ -200,7 +200,7 @@ hi! link PreProc        SublimeGreen
 hi! link Include        SublimePink
 hi! link Define         SublimePink
 hi! link Macro          SublimeGreen
-hi! link PreCondit      SublimeGreen
+hi! link PreCondit      SublimeWhite
 hi! link Special        SublimePurple
 hi! link SpecialChar    SublimePink
 hi! link Tag            SublimeGreen
@@ -214,7 +214,7 @@ hi! link Todo           Comment
 
 " Some highlighting groups custom to the Sublime Monokai theme
 
-call s:h('SublimeType',   { 'fg': s:purple, 'format': 'italic' })
+call s:h('SublimeType',   { 'fg': s:pink, 'format': 'italic' })
 call s:h('SublimeContextParam',  { 'fg': s:orange, 'format': 'italic' })
 hi! link SublimeDocumentation SublimeGrey
 hi! link SublimeFunctionCall SublimeAqua
@@ -264,7 +264,7 @@ hi! link dosbatchSwitch      Normal
 " C
 
 hi! link cAnsiFunction     SublimeFunctionCall
-hi! link cDefine           SublimeGreen
+hi! link cDefine           SublimePink
 hi! link cFormat           Special
 hi! link cInclude          SublimePink
 hi! link cLabel            SublimePink
@@ -272,8 +272,10 @@ hi! link cSpecial          Special
 hi! link cSpecialCharacter Special
 hi! link cStatement        Keyword
 hi! link cStorageClass     SublimePink
-hi! link cStructure        SublimeType
-hi! link cType             SublimeType
+hi! link cStructure        SublimePink
+hi! link cType             SublimePurple
+hi! link cCustom           SublimePurple  
+hi! link cStructName       SublimePurple
 " XXX: Other known deficiencies:
 "
 " * There's no way to distinguish between function calls and
