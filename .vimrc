@@ -155,10 +155,10 @@ autocmd FileType text setlocal autoindent expandtab softtabstop=2 textwidth=80
 " Python
 """""""""""
 autocmd FileType python setlocal
-            \ tabstop=2
+            \ tabstop=4
             \ expandtab
-            \ shiftwidth=2
-            \ softtabstop=2
+            \ shiftwidth=4
+            \ softtabstop=4
 
 
 "autocmd FileType help setlocal nospell
