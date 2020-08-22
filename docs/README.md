@@ -24,7 +24,8 @@ My goals here were to improve appearance and copy/paste functionality. I'll admi
 
 screenshots
 -----------
-- **C** – some code from the linux kernel![find_process_by_pid()](./find_proc.png)
+- **C** – some code from the linux kernel  
+![find_process_by_pid()](./find_proc.png)
 
 todo
 ----
