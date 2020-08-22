@@ -24,7 +24,7 @@ My goals here were to improve appearance and copy/paste functionality. I'll admi
 
 screenshots
 -----------
-- **C** – some code from the linux kernel![__sched_fork()](./sched-fork.png)
+- **C** – some code from the linux kernel![find_process_by_pid()](./find_proc.png)
 
 todo
 ----
