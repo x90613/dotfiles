@@ -90,6 +90,7 @@ call s:create_palette_color('warmgrey',    { 'gui': '#75715E', 'cterm': '59'  })
 call s:create_palette_color('pink',        { 'gui': '#f92772', 'cterm': '197' })
 call s:create_palette_color('green',       { 'gui': '#a6e22d', 'cterm': '148' })
 call s:create_palette_color('aqua',        { 'gui': '#66d9ef', 'cterm': '81'  })
+call s:create_palette_color('darkcyan',     { 'gui': '#00afff', 'cterm': '43'  })
 call s:create_palette_color('yellow',      { 'gui': '#e6db74', 'cterm': '186' })
 call s:create_palette_color('darkyellow',  { 'gui': '#878700', 'cterm': '100' })
 call s:create_palette_color('orange',      { 'gui': '#fd9720', 'cterm': '208' })
@@ -122,6 +123,7 @@ call s:h('SublimeWarmGrey',    { 'fg': s:warmgrey     })
 call s:h('SublimePink',        { 'fg': s:pink         })
 call s:h('SublimeGreen',       { 'fg': s:green        })
 call s:h('SublimeAqua',        { 'fg': s:aqua         })
+call s:h('SublimeDarkCyan',    { 'fg': s:darkcyan     })
 call s:h('SublimeYellow',      { 'fg': s:yellow       })
 call s:h('SublimeOrange',      { 'fg': s:orange       })
 call s:h('SublimePurple',      { 'fg': s:purple       })
@@ -273,9 +275,10 @@ hi! link cSpecialCharacter Special
 hi! link cStatement        Keyword
 hi! link cStorageClass     SublimePink
 hi! link cStructure        SublimePink
-hi! link cType             SublimePurple
-hi! link cCustom           SublimePurple  
-hi! link cStructName       SublimePurple
+hi! link cType             SublimeDarkCyan
+hi! link cCustom           SublimeDarkCyan
+hi! link cStructName       SublimeDarkCyan
+hi! link cKernelType       SublimeDarkCyan
 " XXX: Other known deficiencies:
 "
 " * There's no way to distinguish between function calls and

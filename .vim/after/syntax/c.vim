@@ -29,6 +29,9 @@ syn keyword cBoolean true false TRUE FALSE
 " Custom types
 syn match cCustom "\<[a-zA-Z_][a-zA-Z0-9_]*_[t]\>"
 
+" Common linux kernel types
+syn keyword cKernelType u64 s64 asmlinkage u8 s8 u16 s16 u32 s32
+
 " Struct names
 syn clear cStructure
 syn match cStructure '\<struct\s\+'
@@ -75,9 +78,9 @@ if !get(g:, 'cpp_no_function_highlight', 0)
     hi def link cUserFunction Function
 endif
 
-" Preprocessor
-syn keyword cDefined defined contained containedin=cDefine
-hi def link cDefined cDefine
+" " Preprocessor
+" syn keyword cDefined defined contained containedin=cDefine
+" hi def link cDefined cDefine
 
 " Trailing Space
 syn match cSpaceError '\s\+$' display
