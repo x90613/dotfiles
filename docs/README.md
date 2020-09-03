@@ -24,9 +24,9 @@ My goals here were to improve appearance and copy/paste functionality. I'll admi
 
 screenshots
 -----------
-- **C** – some code from the linux kernel
+- **C** – some code from the linux kernel  
 ![find_process_by_pid()](c_snippet.png)
-- **Python** - some code from [cs3157/boatswain](https://github.com/cs3157/boatswain)
+- **Python** - some code from [cs3157/boatswain](https://github.com/cs3157/boatswain)  
 ![python_snippet](python_snippet.png)
 
 todo
