@@ -224,15 +224,22 @@ hi! link SublimeUserAttribute SublimeGrey
 
 " Bash/POSIX shell
 
+" Overwrite some defaults
+syn keyword shSpecial cd rm popd pushd exit sudo bash
+syn match shSpecial 'git '
+
 hi! link shConditional Conditional
 hi! link shDerefOff    Normal
-hi! link shDerefSimple SublimeAqua
-hi! link shDerefVar    SublimeAqua
+hi! link shDerefSimple SublimeOrange
+hi! link shDerefVar    SublimeOrange
 hi! link shFunctionKey SublimePink
 hi! link shLoop        Keyword
 hi! link shQuote       String
 hi! link shSet         Keyword
-hi! link shStatement   SublimePink
+hi! link shStatement   SublimeAqua
+hi! link shSpecial     SublimePink	
+hi! link shConstant    SublimeGreen
+
 " XXX: Other known deficiencies:
 "
 " * Can't highlight POSIX builtins right because shStatement is later in the
