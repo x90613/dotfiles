@@ -270,6 +270,9 @@ hi! link dosbatchSwitch      Normal
 " hi! link dosbatchSwitch      SublimePurple
 " hi! link dosbatchVariable    SublimeAqua
 
+" Haskell
+hi! link HaskellIdentifier SublimePurple
+
 " C
 
 hi! link cAnsiFunction     SublimeFunctionCall

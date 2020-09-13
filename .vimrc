@@ -160,6 +160,15 @@ autocmd FileType python setlocal
             \ shiftwidth=4
             \ softtabstop=4
 
+""""""""""
+" Haskell
+"""""""""""
+autocmd FileType haskell setlocal
+            \ tabstop=4
+            \ expandtab
+            \ shiftwidth=4
+            \ softtabstop=4
+
 
 "autocmd FileType help setlocal nospell
 
