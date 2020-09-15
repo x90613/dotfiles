@@ -161,6 +161,15 @@ autocmd FileType python setlocal
             \ softtabstop=4
 
 """"""""""
+" go 
+"""""""""""
+autocmd FileType go setlocal
+            \ tabstop=4
+            \ expandtab
+            \ shiftwidth=4
+            \ softtabstop=4
+
+""""""""""
 " Haskell
 """""""""""
 autocmd FileType haskell setlocal
@@ -190,6 +199,7 @@ Plug 'roxma/vim-tmux-clipboard'
 Plug 'tpope/vim-commentary'
 Plug 'al3623/rippl.vim'
 Plug 'neovimhaskell/haskell-vim'
+Plug 'fatih/vim-go'
 call plug#end()
 
 " vim-airline customizations
@@ -227,3 +237,22 @@ let g:haskell_enable_pattern_synonyms = 1 " to enable highlighting of `pattern`
 let g:haskell_enable_typeroles = 1        " to enable highlighting of type roles
 let g:haskell_enable_static_pointers = 1  " to enable highlighting of `static`
 let g:haskell_backpack = 1                " to enable highlighting of backpack keywords
+
+" Go highlighting
+let g:go_highlight_array_whitespace_error = 1
+let g:go_highlight_chan_whitespace_error = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_space_tab_error = 1
+let g:go_highlight_trailing_whitespace_error = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_parameters = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_build_constraints = 1
+let g:go_highlight_variable_declarations = 1
+let g:go_highlight_variable_assignments = 1
+let g:go_highlight_diagnostic_errors = 1
+let g:go_highlight_diagnostic_warnings = 1
+let g:go_gopls_enabled = 0

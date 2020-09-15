@@ -675,6 +675,8 @@ hi! link goTypeDecl          SublimeType
 hi! link goTypeName          Tag
 hi! link goVarAssign         Normal
 hi! link goVarDefs           Normal
+hi! link goParamName         SublimeOrange
+hi! link goBuiltins          SublimeAqua
 
 " HTML
 " This partially depends on XML -- make sure that groups in XML don't
