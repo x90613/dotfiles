@@ -60,6 +60,8 @@ endif
  syn match cOperator "/$"
  syn match cOperator "&&\|||"
  syn match cOperator "[][]"
+ syn match cOperator ":"
+ syn match cOperator "?"
 
 " Delimiters
  syn match cDelimiter "[;\\]"
