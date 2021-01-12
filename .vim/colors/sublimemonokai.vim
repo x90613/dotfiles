@@ -273,6 +273,9 @@ hi! link dosbatchSwitch      Normal
 " Haskell
 hi! link HaskellIdentifier SublimePurple
 
+" OCaml
+hi! link ocamlModPath SublimePurple
+hi! link ocamlConstructor SublimeAqua
 " C
 
 hi! link cAnsiFunction     SublimeFunctionCall

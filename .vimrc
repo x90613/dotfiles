@@ -125,10 +125,20 @@ endif
 autocmd BufNewFile,BufReadPost *.c set filetype=c
 autocmd BufNewFile,BufReadPost *.h set filetype=c
 autocmd FileType c setlocal
-            \ tabstop=8
-            \ noexpandtab
-            \ shiftwidth=8
-            \ softtabstop=8
+            \ tabstop=4
+            \ expandtab
+            \ shiftwidth=4
+            \ softtabstop=4
+
+"""
+" C++
+"""
+autocmd BufNewFile,BufReadPost *.cpp set filetype=c
+autocmd FileType cpp setlocal
+            \ tabstop=4
+            \ expandtab
+            \ shiftwidth=4
+            \ softtabstop=4
 
 
 """"""""""
@@ -164,10 +174,10 @@ autocmd FileType python setlocal
 " go 
 """""""""""
 autocmd FileType go setlocal
-            \ tabstop=4
+            \ tabstop=2
             \ expandtab
-            \ shiftwidth=4
-            \ softtabstop=4
+            \ shiftwidth=2
+            \ softtabstop=2
 
 """"""""""
 " Haskell
@@ -256,3 +266,4 @@ let g:go_highlight_variable_assignments = 1
 let g:go_highlight_diagnostic_errors = 1
 let g:go_highlight_diagnostic_warnings = 1
 let g:go_gopls_enabled = 0
+let g:go_fmt_autosave=0
