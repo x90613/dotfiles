@@ -210,6 +210,7 @@ Plug 'tpope/vim-commentary'
 Plug 'al3623/rippl.vim'
 Plug 'neovimhaskell/haskell-vim'
 Plug 'fatih/vim-go'
+Plug 'vim-scripts/AutoClose'
 call plug#end()
 
 " vim-airline customizations
