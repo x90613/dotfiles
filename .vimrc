@@ -133,7 +133,7 @@ autocmd FileType c setlocal
 """
 " C++
 """
-autocmd BufNewFile,BufReadPost *.cpp set filetype=c
+autocmd BufNewFile,BufReadPost *.cpp set filetype=cpp
 autocmd FileType cpp setlocal
             \ tabstop=4
             \ expandtab
@@ -188,6 +188,15 @@ autocmd FileType haskell setlocal
             \ shiftwidth=4
             \ softtabstop=4
 
+""""""""""
+" OCaml
+"""""""""""
+autocmd FileType ocaml setlocal
+            \ tabstop=4
+            \ expandtab
+            \ shiftwidth=4
+            \ softtabstop=4
+
 
 "autocmd FileType help setlocal nospell
 
@@ -211,6 +220,7 @@ Plug 'al3623/rippl.vim'
 Plug 'neovimhaskell/haskell-vim'
 Plug 'fatih/vim-go'
 Plug 'vim-scripts/AutoClose'
+Plug 'ocaml/vim-ocaml'
 call plug#end()
 
 " vim-airline customizations
@@ -268,3 +278,5 @@ let g:go_highlight_diagnostic_errors = 1
 let g:go_highlight_diagnostic_warnings = 1
 let g:go_gopls_enabled = 0
 let g:go_fmt_autosave=0
+
+set nocompatible

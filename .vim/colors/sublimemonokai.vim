@@ -90,7 +90,7 @@ call s:create_palette_color('warmgrey',    { 'gui': '#75715E', 'cterm': '59'  })
 call s:create_palette_color('pink',        { 'gui': '#f92772', 'cterm': '197' })
 call s:create_palette_color('green',       { 'gui': '#a6e22d', 'cterm': '148' })
 call s:create_palette_color('aqua',        { 'gui': '#66d9ef', 'cterm': '81'  })
-call s:create_palette_color('darkcyan',     { 'gui': '#00afff', 'cterm': '43'  })
+call s:create_palette_color('darkcyan',    { 'gui': '#00afff', 'cterm': '39'  })
 call s:create_palette_color('yellow',      { 'gui': '#e6db74', 'cterm': '186' })
 call s:create_palette_color('darkyellow',  { 'gui': '#878700', 'cterm': '100' })
 call s:create_palette_color('orange',      { 'gui': '#fd9720', 'cterm': '208' })
@@ -274,8 +274,17 @@ hi! link dosbatchSwitch      Normal
 hi! link HaskellIdentifier SublimePurple
 
 " OCaml
-hi! link ocamlModPath SublimePurple
+hi! link ocamlModPath SublimeDarkCyan
 hi! link ocamlConstructor SublimeAqua
+hi! link ocamlyaccVar SublimeOrange
+hi! link ocamlyaccDecl SublimePink
+hi! link ocamlAngle SublimePink
+hi! link ocamlStar SublimePink
+hi! link ocamllexEOF SublimePurple
+hi! link ocamllexRule SublimePink
+hi! link ocamlWildCard SublimePurple
+
+
 " C
 
 hi! link cAnsiFunction     SublimeFunctionCall
@@ -292,6 +301,11 @@ hi! link cType             SublimeDarkCyan
 hi! link cCustom           SublimeDarkCyan
 hi! link cStructName       SublimeDarkCyan
 hi! link cKernelType       SublimeDarkCyan
+
+" C++
+
+hi def link cppSTLtype SublimeDarkCyan
+
 " XXX: Other known deficiencies:
 "
 " * There's no way to distinguish between function calls and
@@ -876,6 +890,8 @@ hi! link pythonException   Keyword
 hi! link pythonFunction    Tag
 hi! link pythonInclude     Keyword
 hi! link pythonLambdaExpr  SublimeType
+hi! link pythonClass SublimePurple
+hi! link pythonBuiltinType SublimePurple
 " XXX: def parens are, for some reason, included in this group.
 hi! link pythonParam       SublimeContextParam
 " XXX: pythonStatement covers a bit too much...unfortunately, this means that

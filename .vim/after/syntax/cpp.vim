@@ -419,7 +419,7 @@ hi def link cppSTLfunction     Function
 hi def link cppSTLfunctional   Typedef
 hi def link cppSTLconstant     Constant
 hi def link cppSTLnamespace    Constant
-hi def link cppSTLtype         Typedef
+" hi def link cppSTLtype         Typedef
 hi def link cppSTLexception    Exception
 hi def link cppSTLiterator     Typedef
 hi def link cppSTLiterator_tag Typedef
