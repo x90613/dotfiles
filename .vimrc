@@ -221,6 +221,7 @@ Plug 'neovimhaskell/haskell-vim'
 Plug 'fatih/vim-go'
 Plug 'vim-scripts/AutoClose'
 Plug 'ocaml/vim-ocaml'
+Plug 'luochen1990/rainbow'
 call plug#end()
 
 " vim-airline customizations
@@ -278,5 +279,6 @@ let g:go_highlight_diagnostic_errors = 1
 let g:go_highlight_diagnostic_warnings = 1
 let g:go_gopls_enabled = 0
 let g:go_fmt_autosave=0
+let g:rainbow_active = 1
 
 set nocompatible
