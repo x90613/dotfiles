@@ -171,13 +171,23 @@ autocmd FileType python setlocal
             \ softtabstop=4
 
 """"""""""
-" go 
+" Bash
 """""""""""
-autocmd FileType go setlocal
-            \ tabstop=2
+autocmd FileType sh setlocal
+            \ tabstop=4
             \ expandtab
-            \ shiftwidth=2
-            \ softtabstop=2
+            \ shiftwidth=4
+            \ softtabstop=4
+
+""""""""""
+" json
+"""""""""""
+autocmd FileType json setlocal
+            \ tabstop=4
+            \ expandtab
+            \ shiftwidth=4
+            \ softtabstop=4
+
 
 """"""""""
 " Haskell
@@ -187,6 +197,15 @@ autocmd FileType haskell setlocal
             \ expandtab
             \ shiftwidth=4
             \ softtabstop=4
+
+""""""""""
+" go 
+"""""""""""
+autocmd FileType go setlocal
+            \ tabstop=2
+            \ expandtab
+            \ shiftwidth=2
+            \ softtabstop=2
 
 """"""""""
 " OCaml

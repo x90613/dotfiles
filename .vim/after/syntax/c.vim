@@ -71,7 +71,7 @@ endif
  hi def link cBraces Delimiter
 
 " Constants
-syn match cConstant "\<[A-Z_]*\>"
+syn match cConstant "\<[A-Z1-9_]*\>"
 hi def link cConstant Constant
 
 " Highlight function names

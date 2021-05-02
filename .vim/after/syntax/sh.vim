@@ -22,7 +22,7 @@ syn match shConstant "\v/dev/\w+"
             \ containedin=shFunctionOne,shFunctionTwo,shFunctionThree,shFunctionFour,shIf,shCmdParenRegion,shCommandSub
 
 " Common commands
-let commands = [ 'arch', 'awk', 'b2sum', 'base32', 'base64', 'basename', 'basenc', 'brew', 'cat', 'chcon', 'chgrp', 'chown', 'chroot', 'cksum', 'comm', 'cp', 'csplit', 'curl', 'cut', 'date', 'dd', 'defaults', 'df', 'dir', 'dircolors', 'dirname', 'ed', 'env', 'expand', 'factor', 'fmt', 'fold', 'grep', 'groups', 'head', 'hexdump', 'hostid', 'hostname', 'hugo', 'id', 'install', 'join', 'killall', 'link', 'ln', 'logname', 'md5sum', 'mkdir', 'mkfifo', 'mknod', 'mktemp', 'nice', 'nl', 'nohup', 'npm', 'nproc', 'numfmt', 'od', 'open', 'paste', 'pathchk', 'pr', 'printenv', 'printf', 'ptx', 'readlink', 'realpath', 'rg', 'runcon', 'scutil', 'sed', 'seq', 'sha1sum', 'sha2', 'shred', 'shuf', 'split', 'stat', 'stdbuf', 'stty', 'sum', 'sync', 'tac', 'tee', 'terminfo', 'timeout', 'tmux', 'top', 'touch', 'tput', 'tr', 'truncate', 'tsort', 'tty', 'uname', 'unexpand', 'uniq', 'unlink', 'uptime', 'users', 'vdir', 'vim', 'wc', 'who', 'whoami', 'yabai', 'yes', 'wget', 'apt', 'dpkg', 'pip3', 'checkout', 'kedr', 'clean', 'remote', 'add', 'tag', 'branch', 'fetch', 'pull', 'modprobe', 'dmesg' ]
+let commands = [ 'arch', 'awk', 'b2sum', 'base32', 'base64', 'basename', 'basenc', 'brew', 'cat', 'chcon', 'chgrp', 'chown', 'chroot', 'cksum', 'comm', 'cp', 'csplit', 'curl', 'cut', 'date', 'dd', 'defaults', 'df', 'dir', 'dircolors', 'dirname', 'ed', 'env', 'expand', 'factor', 'fmt', 'fold', 'grep', 'groups', 'head', 'hexdump', 'hostid', 'hostname', 'hugo', 'id', 'install', 'join', 'killall', 'link', 'ln', 'logname', 'md5sum', 'mkdir', 'mkfifo', 'mknod', 'mktemp', 'nice', 'nl', 'nohup', 'npm', 'nproc', 'numfmt', 'od', 'open', 'paste', 'pathchk', 'pr', 'printenv', 'printf', 'ptx', 'readlink', 'realpath', 'rg', 'runcon', 'scutil', 'sed', 'seq', 'sha1sum', 'sha2', 'shred', 'shuf', 'split', 'stat', 'stdbuf', 'stty', 'sum', 'sync', 'tac', 'tee', 'terminfo', 'timeout', 'tmux', 'top', 'touch', 'tput', 'tr', 'truncate', 'tsort', 'tty', 'uname', 'unexpand', 'uniq', 'unlink', 'uptime', 'users', 'vdir', 'vim', 'wc', 'who', 'whoami', 'yabai', 'yes', 'wget', 'apt', 'dpkg', 'pip3', 'checkout', 'kedr', 'clean', 'remote', 'add', 'tag', 'branch', 'fetch', 'pull', 'modprobe', 'dmesg', 'diff', 'log', 'req', 'genrsa', 'ca', 's_client', 's_server' ]
 
 for i in commands
     execute 'syn match shStatement "\v(\w|-)@<!'
@@ -30,7 +30,7 @@ for i in commands
                 \ . '(\w|-)@!" containedin=shFunctionOne,shFunctionTwo,shFunctionThree,shFunctionFour,shIf,shCmdParenRegion,shCommandSub,zshBrackets'
 endfor
 
-let special_commands = [ 'sudo', 'bash', 'git', 'pushd', 'popd' ]
+let special_commands = [ 'sudo', 'bash', 'git', 'pushd', 'popd', 'openssl' ]
 for i in special_commands
     execute 'syn match shSpecial "\v(\w|-)@<!'
                 \ . i
