@@ -238,7 +238,6 @@ Plug 'tpope/vim-commentary'
 Plug 'al3623/rippl.vim'
 Plug 'neovimhaskell/haskell-vim'
 Plug 'fatih/vim-go'
-Plug 'vim-scripts/AutoClose'
 Plug 'ocaml/vim-ocaml'
 Plug 'luochen1990/rainbow'
 call plug#end()

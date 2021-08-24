@@ -3,3 +3,7 @@
 	name = Hans Montero
 [alias]
 	st = status
+	cl = clean -f -d
+	cam = commit -am
+	pr = pull --rebase
+	co = checkout
