@@ -171,7 +171,7 @@ autocmd FileType python setlocal
             \ softtabstop=4
 
 """"""""""
-" Bash
+" Shell 
 """""""""""
 autocmd FileType sh setlocal
             \ tabstop=4
