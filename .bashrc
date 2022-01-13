@@ -53,16 +53,6 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-
-
-if [ "$color_prompt" = yes ]; then
-        PS1="$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]\h'; else echo "\[\033[01;32m\]\u\[\033[00;36m\]@\h\[\033[00m\]:"; fi)\[\033[01;34m\]\w \$([[ \$? != 0 ]] && echo \"\[\033[01;31m\]>_<\[\033[01;34m\] \")\[\033[00;36m\]\$\[\033[00m\] "
-
-else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-fi
-unset color_prompt force_color_prompt
-
 # enable color support of some programs
 case "$OSTYPE" in
 *linux*)
@@ -100,3 +90,10 @@ fi
 if [ -f ~/.hostbrc ]; then
     . ~/.hostbrc
 fi
+
+if [ "$color_prompt" = yes ]; then
+	PS1="\n[\t]\[\033[01;36m\]\u$HOST_COLOR@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00;36m\]\n\$([[ \$? != 0 ]] && echo \"\[\033[01;31m\]\" || echo \"\[\033[01;36m\]\")\$\[\033[00m\] "
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+fi
+unset color_prompt force_color_prompt
