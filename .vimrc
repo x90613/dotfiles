@@ -190,9 +190,27 @@ autocmd FileType json setlocal
 
 
 """"""""""
+" js 
+"""""""""""
+autocmd FileType javascript setlocal
+            \ tabstop=2
+            \ expandtab
+            \ shiftwidth=2
+            \ softtabstop=2
+
+""""""""""
 " Haskell
 """""""""""
 autocmd FileType haskell setlocal
+            \ tabstop=2
+            \ expandtab
+            \ shiftwidth=2
+            \ softtabstop=2
+
+""""""""""
+" OCaml
+"""""""""""
+autocmd FileType ocaml setlocal
             \ tabstop=4
             \ expandtab
             \ shiftwidth=4
@@ -207,14 +225,22 @@ autocmd FileType go setlocal
             \ shiftwidth=2
             \ softtabstop=2
 
-""""""""""
-" OCaml
+" Yacc
 """""""""""
-autocmd FileType ocaml setlocal
+autocmd FileType yacc setlocal
             \ tabstop=4
             \ expandtab
             \ shiftwidth=4
             \ softtabstop=4
+
+""""""""""
+" sslang 
+"""""""""""
+autocmd FileType sslang setlocal
+            \ tabstop=2
+            \ expandtab
+            \ shiftwidth=2
+            \ softtabstop=2
 
 
 "autocmd FileType help setlocal nospell
@@ -240,6 +266,8 @@ Plug 'neovimhaskell/haskell-vim'
 Plug 'fatih/vim-go'
 Plug 'ocaml/vim-ocaml'
 Plug 'luochen1990/rainbow'
+Plug 'pangloss/vim-javascript'
+Plug 'ssm-lang/sslang.vim'
 call plug#end()
 
 " vim-airline customizations
