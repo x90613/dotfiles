@@ -86,6 +86,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export GIT_EDITOR=vim
+
 # Alias host specific configs
 if [ -f ~/.hostbrc ]; then
     . ~/.hostbrc

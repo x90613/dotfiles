@@ -125,10 +125,10 @@ endif
 autocmd BufNewFile,BufReadPost *.c set filetype=c
 autocmd BufNewFile,BufReadPost *.h set filetype=c
 autocmd FileType c setlocal
-            \ tabstop=4
-            \ expandtab
-            \ shiftwidth=4
-            \ softtabstop=4
+            \ tabstop=8
+            \ noexpandtab
+            \ shiftwidth=8
+            \ softtabstop=8
 
 """
 " C++
@@ -268,6 +268,7 @@ Plug 'ocaml/vim-ocaml'
 Plug 'luochen1990/rainbow'
 Plug 'pangloss/vim-javascript'
 Plug 'ssm-lang/sslang.vim'
+Plug 'whonore/Coqtail'
 call plug#end()
 
 " vim-airline customizations
@@ -328,3 +329,4 @@ let g:go_fmt_autosave=0
 let g:rainbow_active = 1
 
 set nocompatible
+let mapleader = " "
