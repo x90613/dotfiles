@@ -1,9 +1,7 @@
 #!/bin/bash
+# repo has to place in HOME directory
 
 ln -sf $HOME/dotfiles/.gitconfig $HOME/.gitconfig
-
-mv $HOME/.bashrc $HOME/.oldbashrc &> /dev/null
-ln -sf $HOME/dotfiles/.bashrc $HOME/.bashrc
 
 mv $HOME/.vimrc $HOME/.oldvimrc &> /dev/null
 ln -sf $HOME/dotfiles/.vimrc $HOME/.vimrc

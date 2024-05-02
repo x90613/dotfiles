@@ -1,9 +1,9 @@
 [user]
-	email = hjm2133@columbia.edu
-	name = Hans Montero
-[alias]
-	st = status
-	cl = clean -f -d
-	cam = commit -am
-	pr = pull --rebase
-	co = checkout
+	email = x90613@gmail.com
+	name = x90613
+# [alias]
+# 	st = status
+# 	cl = clean -f -d
+# 	cam = commit -am
+# 	pr = pull --rebase
+# 	co = checkout
