@@ -20,4 +20,4 @@ tmux
 ----
 My goals here were to improve appearance and copy/paste functionality. I'll admit that I should really learn how to effectively use vim panes but in the meantime...
 - [edkolev/tmuxline.vim](https://github.com/edkolev/tmuxline.vim): a lightweight tmux statusline that comes with vim-airline integration
-- [roxma/vim-tmux-clipboard](https://github.com/roxma/vim-tmux-clipboard): effectively allows for easy copy/paste between vim/tmux and vim buffers in different tmux panes
+- [roxma/vim-tmux-clipboard](https://github.com/roxma/vim-tmux-clipboard): effectively allows for easy copy/paste between vim/tmux and vim buffers in different tmux panes# dotfiles
